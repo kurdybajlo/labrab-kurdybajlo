@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Первый разработчик-FOREWER, Mr.Second-FOREWER, Mr.Third--FOREWER
+=======
+Mr.First-FOREWER, Второй разработчик-FOREWER, Mr.Third--FOREWER
+>>>>>>> Second: name changed
