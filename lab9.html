@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+      console.log('Exercise 5')
+        var kurd = [], sum = 0;
+        for(let i = 0; i <=4; i++){
+          kurd[i] = +prompt('Введи число '+i)
+          sum += kurd[i];}
+        console.log('Сумма элементов массива' +sum);
+
+      console.log('Exercise 6')
+        let arr = [], m = 1,
+        P = +prompt('введите длину массива');
+        for(let i = 0; i <= P-1; i++){
+        arr[i] = Math.floor(Math.random()*10);
+        m*=arr[i];
+        }
+      console.log('результат умножения всех элементов массива ' + m)
+    </script>
+  </body>
+</html>
