@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    /*Задание 1*/
+    function sum(){
+      var a = +prompt("Введите число 1", '');
+      var b = +prompt("Введите число 2", '');
+      var c = a+b;
+      alert(c);
+    }
+    /*Задание 2*/
+    function twoPow(a){
+      var a = +prompt("Введите число", '');
+      var b = Math.pow(a, 2);
+      alert(b);
+    }
+    /*Задание 3*/
+    function averageArr(){
+      var arr=[2, 4, 6, 8, 10];
+      var b=0;
+      for (i=0; i<arr.length; i++){
+        b+=arr[i];
+      }
+      var c=b/arr.length;
+      alert(c);
+    }
+    /*Задание 4*/
+    function age(){
+      var a = +prompt("Сколько вам лет?", '');
+      if (a>0 && a<14){
+        alert("Детство");
+    } else if (a>13 && a<26){
+      alert("Юность");
+    } else if (a>25 && a<71){
+      alert("Зрелость");
+    } else if (a>70){
+      alert("Старость");
+    } else {alert("Error)");
+      }
+    }
+    /*Задание 5*/
+    function maxArr(){
+      var arr=[-2, 4, 216, -8, 10, -114, 14, 1];
+      var arr1=Math.max(arr);
+      while (arr1>(-10) && arr1<10){
+        alert(arr1)
+        delete arr[Max]
+      }
+    }
+    </script>
+</head>
+<body>
+  <input type="button" value="Сумма" onclick="sum()">
+  <input type="button" value="Квадрат" onclick="twoPow()">
+  <input type="button" value="Среднее арифметическое" onclick="averageArr()">
+  <input type="button" value="Возраст" onclick="age()">
+  <input type="button" value="Максимум" onclick="maxArr()">
+</body>
+</html>

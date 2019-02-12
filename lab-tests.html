@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+    function age(){
+      var a = +prompt("Сколько вам лет?", '');
+      if (a>0 && a<14){
+        alert("Детство");
+    } else if (a>13 && a<26){
+      alert("Юность");
+    } else if (a>25 && a<71){
+      alert("Зрелость");
+    } else if (a>70){
+      alert("Старость");
+    } else {alert("Error)");
+      }
+    }
+    </script>
+</head>
+<body>
+  <input type="button" value="жим жим" onclick="age()">
+</body>
+</html>
