@@ -44,14 +44,15 @@
       }
     }
     /*Задание 5*/
-    function maxArr(){
-      var arr=[-2, 4, 216, -8, 10, -114, 14, 1];
-      var arr1=Math.max(arr);
-      while (arr1>(-10) && arr1<10){
-        alert(arr1)
-        delete arr[Max]
-      }
-    }
+    function maxArr() {
+      var A=[-2,4,216,-8,10,-114,14,1], max=0
+    for (var i = 0; i < A.length; i++) {
+        if (A[i]>max && A[i]>=-10 && A[i]<=10) {
+    max=A[i]
+  }
+}
+alert(max);
+}
     </script>
 </head>
 <body>
