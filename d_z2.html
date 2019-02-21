@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1 =>
+    var getMsg=(a)=>{return a;}
+    getMsg(a);
+    //1()
+    (function(a){return a;})(a)
+    //2 =>
+    var showOddEven=(x)=>{
+      if(x%2){
+         alert("Number is Odd")
+     } else {
+         alert("Number is Even")
+     }
+    }
+    showOddEven(x)
+    //2 ()
+    (function(x){
+      if(x%2){
+         alert("Number is Odd")
+     } else {
+         alert("Number is Even")
+     }
+   })(x)
+   //3 =>
+   var lengthMsh=(b)=>{return b.length;}
+   lengthMsh(b)
+   //3 ()
+   (function(b){return b.length;})(b)
+   //4 =>
+   var getName = (person)=>{ return person.name;}
+   getName(person)
+   //4 ()
+   (function(person){ return person.name;})(person);
+   //5 =>
+   var getWeight=()=>{
+     var person = {
+        age:15,
+        weight:40
+    }
+    return person.weight
+   }
+   getWeight()
+   //5 ()
+   (function(){
+     var person = {
+        age:15,
+        weight:40
+    }
+    return person.weight
+  })()
+  </script>
+</body>
+</html>

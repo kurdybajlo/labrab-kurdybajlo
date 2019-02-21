@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1-я функция
+      function one(w, l, h){
+        var v = w*l*h;
+        console.log(v)
+      }
+      one(2, 3, 2)
+    //2-я функция
+      var two = function (w, l, h) {
+        var v = w*l*h;
+        console.log(v);
+      }
+      two(2, 3, 2)
+    //3-я функция
+      var three = function proizv (w, l, h) {
+        var v = w*l*h;
+        console.log(v);
+      }
+      three(2, 3, 2)
+    //4-я функция
+      var four = new Function ("w, l, h", "v = w*l*h; console.log(v);")
+      four(2, 3, 2)
+    //5-я функция
+      (function(w, l, h){
+        var v = w*l*h;
+        console.log(v);
+      })(2, 3, 2)
+    //6-я функция
+      var six = (w, l, h)=>{var v = w*l*h;
+      console.log(v);}
+      six(2, 3, 2)
+    </script>
+</body>
+</html>
